@@ -15,7 +15,6 @@ import { PageWebsiteModule } from './page/website/page-website.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    WebSiteSharedModule,
     PageWebsiteModule
   ],
   providers: [],

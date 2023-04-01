@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { WebSiteSharedModule } from 'src/app/shared/website/web-site-shared.module';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
   ],
   imports: [
     CommonModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    WebSiteSharedModule
   ],
   exports: [
     HomeComponent

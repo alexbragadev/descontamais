@@ -4,6 +4,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AppComponent } from 'src/app/app.component';
 import { SearchComponent } from './components/search/search.component';
 import { UserAccountComponent } from './components/user-account/user-account.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -12,7 +15,15 @@ import { UserAccountComponent } from './components/user-account/user-account.com
     UserAccountComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatSidenavModule,
+    MatFormFieldModule,
+    MatSelectModule
+  ],
+  exports: [
+    MenuComponent,
+    SearchComponent,
+    UserAccountComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
