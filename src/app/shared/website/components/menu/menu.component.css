@@ -15,6 +15,10 @@ mat-drawer-content {
   align-items: flex-start;
 }
 
+mat-drawer {
+  width: 280px;
+}
+
 @media (min-width: 992px) {  }
 
 
